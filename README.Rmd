@@ -16,25 +16,14 @@ knitr::opts_chunk$set(eval = FALSE)
 The package is independently buildable and installable. Scientific interfaces
 remain proposals: no scientific functions or native backends are exported.
 
-## Installation and development
+## Installation
 
-For development, open `gsel.Rproj` in RStudio. Use the Build pane to
-Install, Check or Document the package. Edit this README in `README.Rmd`
-and Knit to update `README.md`. The [website guide](https://github.com/psoerensen/gsel/blob/main/website/README.md)
-explains building the pkgdown site from the R console.
+Install from GitHub:
 
-
-From this local checkout with R installed:
-
-```sh
-R CMD INSTALL .
-Rscript tools/build/qualify.R
+```r
+install.packages("remotes")  # Run once
+remotes::install_github("psoerensen/gsel")
 ```
-
-The second command builds a source archive, installs into a dedicated isolated
-library outside the repository, and runs R CMD check. No remote repository,
-published installer, biological download or sibling build is established.
-See [development](https://github.com/psoerensen/gsel/blob/main/docs/development.md).
 
 ## Reference example
 

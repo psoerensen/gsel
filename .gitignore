@@ -1,0 +1,12 @@
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+*.Rcheck/
+*.tar.gz
+Rplots.pdf
+build/
+website/_site/
+website/.quarto/
+website/.cache/
+website/generated/

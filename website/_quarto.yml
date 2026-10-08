@@ -1,0 +1,29 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "generated/*.qmd"
+  resources:
+    - "generated/files/**"
+execute:
+  eval: false
+  echo: true
+website:
+  title: gsel
+  navbar:
+    left:
+      - text: Home
+        href: generated/index.qmd
+      - text: Design
+        href: generated/docs-README.qmd
+      - text: Package reference
+        href: generated/reference.qmd
+      - text: Verification
+        href: generated/docs-qualification-foundations.qmd
+  page-footer: "gsel · initial foundations · GPL-3 · local preview"
+format:
+  html:
+    theme: flatly
+    html-math-method: mathjax
+    highlight-style: github
+    toc: true

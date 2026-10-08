@@ -1,0 +1,16 @@
+Package: gsel
+Type: Package
+Title: Selection and Breeding Programme Design
+Version: 0.0.1
+Authors@R: person("Peter", "Soerensen", email = "peter.sorensen@r-qgg.org",
+    role = c("aut", "cre"))
+Description: Establishes package foundations and proposed scientific contracts
+    for selection policies and breeding programme design.
+    Includes package documentation and a small reference calculation for
+    teaching. This initial development package exports no scientific functions.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+NeedsCompilation: no
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3

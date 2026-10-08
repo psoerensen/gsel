@@ -26,5 +26,5 @@ Open the package RStudio project for devtools installation, checking and
 roxygen documentation. Edit README.Rmd and Knit to update README.md. The
 pkgdown website uses authoritative Markdown and Rd, with examples disabled
 and output outside docs. See [website](../website/README.md) for the R console
-command and manual-only Pages workflow. Linux/macOS package checks and
+command and automatic Pages workflow. Linux/macOS package checks and
 GitHub Actions deployment have not been validated by this documentation work.

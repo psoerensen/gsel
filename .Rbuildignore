@@ -8,3 +8,8 @@
 ^AGENTS\.md$
 ^\.gitignore$
 ^\.gitattributes$
+
+^_pkgdown\.yml$
+^README\.Rmd$
+^vignettes/articles$
+^pkgdown$

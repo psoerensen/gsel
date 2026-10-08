@@ -15,6 +15,9 @@ and regenerate help with roxygen2; do not hand-edit generated Rd. Tests should
 be small, deterministic and tied to executable behavior. Broad qualification
 and benchmarks require explicit authorization.
 
-Website sources are README/docs/man. Use website/build.py and ignored output;
-never execute examples during rendering. Remotes, pushes and publication require
-explicit instructions. Keep teaching notes/slides/apps in their owners.
+Follow [website/README.md](https://github.com/psoerensen/gsel/blob/main/website/README.md). Use the RStudio project and
+`pkgdown::build_site(examples = FALSE, install = FALSE)` from the package root.
+Output stays in ignored website/_site; docs/man remain authoritative. Website
+builds must not execute scientific examples, benchmarks or biological downloads.
+Website-only article include chunks may read local public Markdown. No private
+repository is required. Commit, push and deployment require explicit instructions.

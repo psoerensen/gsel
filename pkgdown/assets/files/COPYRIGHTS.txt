@@ -1,0 +1,6 @@
+gsel: GNU GPL version 3 (GPL-3).
+Copyright (c) 2026 Peter Sørensen.
+Metadata/contact, RStudio settings, exclusions and documentation conventions
+were adapted from local gsim 0.17.0 (ea10c33), together with the GPL text.
+Scientific design and teaching references are new work for this foundation.
+No gsim biological kernels or HAPNEST/gbits/gmat sources are copied or bundled.

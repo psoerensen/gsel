@@ -1,0 +1,9 @@
+---
+title: "Selection and breeding scope and proposed interfaces"
+output: html_document
+---
+
+```{r documentation, echo=FALSE, results="asis"}
+source("_include.R")
+cat(include_document("docs/design/scope.md"))
+```

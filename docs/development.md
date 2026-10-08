@@ -22,7 +22,9 @@ sibling .r-library/gsel-foundation cache, and checks the source tarball with
 library. It preserves caches and normal user libraries. Tests run the installed
 reference example against independent constants; no empty testthat suite.
 
-The local static website uses authoritative Markdown and Rd, with examples
-disabled and output outside docs. Manual-only package CI is a future recipe
-on three operating systems, not evidence of actual platform checks. No remote,
-CI run or deployment is created. See [website](../website/README.md).
+Open the package RStudio project for devtools installation, checking and
+roxygen documentation. Edit README.Rmd and Knit to update README.md. The
+pkgdown website uses authoritative Markdown and Rd, with examples disabled
+and output outside docs. See [website](../website/README.md) for the R console
+command and manual-only Pages workflow. Linux/macOS package checks and
+GitHub Actions deployment have not been validated by this documentation work.

@@ -1,0 +1,64 @@
+---
+output:
+  github_document:
+    html_preview: false
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file. -->
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(eval = FALSE)
+```
+
+# gsel
+
+**Selection and Breeding Programme Design.** Initial development foundations, version 0.0.1.
+The package is independently buildable and installable. Scientific interfaces
+remain proposals: no scientific functions or native backends are exported.
+
+## Installation and development
+
+For development, open `gsel.Rproj` in RStudio. Use the Build pane to
+Install, Check or Document the package. Edit this README in `README.Rmd`
+and Knit to update `README.md`. The [website guide](https://github.com/psoerensen/gsel/blob/main/website/README.md)
+explains building the pkgdown site from the R console.
+
+
+From this local checkout with R installed:
+
+```sh
+R CMD INSTALL .
+Rscript tools/build/qualify.R
+```
+
+The second command builds a source archive, installs into a dedicated isolated
+library outside the repository, and runs R CMD check. No remote repository,
+published installer, biological download or sibling build is established.
+See [development](https://github.com/psoerensen/gsel/blob/main/docs/development.md).
+
+## Reference example
+
+```r
+library(gsel)
+example_file <- system.file("examples", "reference.R", package = "gsel",
+                            mustWork = TRUE)
+reference_env <- new.env()
+sys.source(example_file, envir = reference_env)
+reference_env$reference
+```
+
+This is transparent base-R arithmetic for teaching, not a proposed method API.
+
+## Design and status
+
+- [Documentation index](https://github.com/psoerensen/gsel/blob/main/docs/README.md)
+- [Scope and proposed interfaces](https://github.com/psoerensen/gsel/blob/main/docs/design/scope.md)
+- [Data and cooperation contracts](https://github.com/psoerensen/gsel/blob/main/docs/design/data-contracts.md)
+- [Reuse and ownership](https://github.com/psoerensen/gsel/blob/main/docs/design/reuse.md)
+- [Roadmap and teaching references](https://github.com/psoerensen/gsel/blob/main/docs/design/roadmap.md)
+- [Foundation verification](https://github.com/psoerensen/gsel/blob/main/docs/qualification/foundations.md)
+- [Website development](https://github.com/psoerensen/gsel/blob/main/website/README.md)
+
+No umbrella gsuite or required simulation dependency. Course notes, slides,
+exercises and apps remain in the population-genetics and quantitative-genetics
+teaching repositories. GPL-3; see [notices](https://github.com/psoerensen/gsel/blob/main/inst/COPYRIGHTS).

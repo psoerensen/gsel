@@ -1,0 +1,40 @@
+llm-docs: false
+url: https://psoerensen.github.io/gsel/
+destination: website/_site
+template:
+  bootstrap: 5
+  bootswatch: flatly
+repo:
+  url:
+    home: https://github.com/psoerensen/gsel/
+    source: https://github.com/psoerensen/gsel/blob/main/
+    issue: https://github.com/psoerensen/gsel/issues/
+    user: https://github.com/
+articles:
+- title: Guides and development
+  contents:
+  - articles/docs-README
+  - articles/docs-development
+  - articles/inst-COPYRIGHTS
+  - articles/website-README
+- title: Scientific contracts
+  contents:
+  - articles/docs-design-data-contracts
+  - articles/docs-design-reuse
+  - articles/docs-design-roadmap
+  - articles/docs-design-scope
+- title: Qualification evidence
+  contents:
+  - articles/docs-qualification-foundations
+redirects:
+  - ["generated/index.html", "index.html"]
+  - ["generated/reference.html", "reference/gsel-package.html"]
+  - ["generated/docs-development.html", "articles/docs-development.html"]
+  - ["generated/docs-README.html", "articles/docs-README.html"]
+  - ["generated/docs-design-data-contracts.html", "articles/docs-design-data-contracts.html"]
+  - ["generated/docs-design-reuse.html", "articles/docs-design-reuse.html"]
+  - ["generated/docs-design-roadmap.html", "articles/docs-design-roadmap.html"]
+  - ["generated/docs-design-scope.html", "articles/docs-design-scope.html"]
+  - ["generated/docs-qualification-foundations.html", "articles/docs-qualification-foundations.html"]
+  - ["generated/website-guide.html", "articles/website-README.html"]
+  - ["AGENTS.html", "https://github.com/psoerensen/gsel/blob/main/AGENTS.md"]

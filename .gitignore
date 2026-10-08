@@ -10,3 +10,5 @@ website/_site/
 website/.quarto/
 website/.cache/
 website/generated/
+
+website/_quarto-preview/

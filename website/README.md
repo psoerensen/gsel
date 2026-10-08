@@ -45,3 +45,22 @@ workflow also retains **Run workflow** for a manual rebuild on main. Environment
 protection rules, if configured in GitHub, still apply to deployment.
 The configured URL is <https://psoerensen.github.io/gsel/>. A successful
 Actions deployment establishes that the published site is available.
+
+## Tutorial maintenance
+
+Tutorial prose lives in docs/tutorials and complete runnable examples in
+inst/examples. The primary code block in each tutorial must match the
+computation section of its example. From the repository root, run:
+
+```r
+source("tools/validation/check_tutorials.R")
+source("tools/validation/render_tutorial_figures.R")
+```
+
+The first command checks small independent numerical answers and source-code
+agreement. The second explicitly runs the teaching examples to regenerate their
+document figure assets and ignored PNG previews. It is a developer action,
+separate from website rendering; website builds never execute the examples.
+Figures are SVG source assets under docs/tutorials/figures, with identical copies
+under pkgdown/assets/figures for publication. Edit the R examples and tutorial
+prose together, rerun these focused checks, then build the website normally.

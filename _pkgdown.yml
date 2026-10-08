@@ -11,6 +11,11 @@ repo:
     issue: https://github.com/psoerensen/gsel/issues/
     user: https://github.com/
 articles:
+- title: Tutorials
+  navbar: Tutorials
+  contents:
+  - articles/docs-tutorials-breeding-objectives
+  - articles/docs-tutorials-selection-indices
 - title: Guides and development
   contents:
   - articles/docs-README

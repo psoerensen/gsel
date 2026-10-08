@@ -8,6 +8,8 @@ include_document <- function(source) {
   sources <- c(paste0("docs/", documents), "website/README.md", "website/examples.md", "inst/COPYRIGHTS")
   article <- function(path) sub("[.]md$", "", gsub("[/_]", "-", path))
   mapping <- as.list(setNames(paste0(article(sources), ".html"), sources))
+  figures <- list.files(file.path(root, "docs/tutorials/figures"), "[.]svg$")
+  for (name in figures) mapping[[paste0("docs/tutorials/figures/", name)]] <- paste0("../figures/", name)
   mapping[["README.md"]] <- "../index.html"
   help <- list.files(file.path(root, "man"), "[.]Rd$")
   for (name in help) mapping[[paste0("man/", name)]] <- paste0("../reference/", sub("[.]Rd$", ".html", name))

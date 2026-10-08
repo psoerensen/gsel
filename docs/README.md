@@ -1,7 +1,16 @@
 # gsel documentation
 
-Installed help for gsel-package describes foundation status. The following
-documents define proposals, not claims of supported scientific computation.
+Installed help for gsel-package describes foundation status. The scientific contracts
+define proposals, not claims of supported scientific computation. The tutorials
+provide independently runnable base-R teaching calculations, with no new
+exported scientific functions.
+
+## Tutorials
+
+- [Define a breeding objective](tutorials/breeding-objectives.md)
+- [Construct a selection index](tutorials/selection-indices.md)
+
+## Contracts and development
 
 - [Scientific scope and proposed interfaces](design/scope.md)
 - [Data and cooperation](design/data-contracts.md)

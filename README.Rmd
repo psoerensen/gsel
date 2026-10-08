@@ -25,6 +25,15 @@ install.packages("remotes")  # Run once
 remotes::install_github("psoerensen/gsel")
 ```
 
+## Tutorials
+
+Small worked examples with runnable base-R code, figures and exercises:
+
+- [Define a breeding objective](https://github.com/psoerensen/gsel/blob/main/docs/tutorials/breeding-objectives.md)
+- [Construct a selection index](https://github.com/psoerensen/gsel/blob/main/docs/tutorials/selection-indices.md)
+
+These teaching calculations do not introduce exported scientific functions.
+
 ## Reference example
 
 ```r

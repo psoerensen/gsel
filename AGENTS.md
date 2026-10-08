@@ -22,3 +22,10 @@ builds must not execute scientific examples, benchmarks or biological downloads.
 Website-only article include chunks may read local public Markdown. No private
 repository is required. Commit and push require explicit instructions. The user has authorized automatic
 website deployment on pushes to main; retain the manual workflow option.
+
+Tutorials are base-R reference calculations, not scientific package APIs.
+Keep docs/tutorials code blocks aligned with inst/examples and retain explicit
+assumptions. The authorized tutorial checks and manual figure reproduction in
+website/README.md may execute these tiny examples; website rendering remains
+display-only. Intentional SVG tutorial figures are documentation source assets,
+not generated site output. Course repositories remain separate.
